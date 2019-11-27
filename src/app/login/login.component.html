@@ -1,0 +1,27 @@
+<div class="container">
+    <form  #f="ngForm" (ngSubmit)="signin()">
+    
+          <div class = "form-group">
+          <label style="width:100px;">Name</label>
+              <input type="text" style="width:300px;" id="Name" class="form-control" name="name" [(ngModel)]="name" placeholder="Name">
+            </div>
+      
+      
+        <div class = "form-group">
+            <input type="email" style="width:300px;" name="email" class="form-control" [(ngModel)]="email" placeholder="Email">
+        </div>
+      <div class = "form-group">
+         <input type="text" style="width:300px;" name="phone" class="form-control" [(ngModel)]="phone" placeholder="Mobile">
+       </div>
+        <div class = "form-group">
+        <input type="text"style="width:300px;" name="add" class="form-control" [(ngModel)]="add" placeholder="Address">
+      </div>
+      <div class = "form-group" style="float:left;">
+       <button class="btn btn-primary" type="submit">Submit</button>
+    
+        <button class="btn btn-primary" style="margin-left:150px;width: 100px;" (click)="GotoList()" type="submit">List</button>
+      </div>
+   
+    </form>
+    </div>
+ 
